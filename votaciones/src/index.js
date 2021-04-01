@@ -1,8 +1,10 @@
+import logo from './logo.svg';
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
+//import "./styles.css";
+import Statistics from "./componentes/statistics.js";
 
-
-const App = () => {
+function App() {
   // save clicks of each button to its own state
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
@@ -44,33 +46,16 @@ var average = ((good*1)+(neutral*0)+(bad*-1))/(good+neutral+bad)
       <button onClick={handlerClickGood}>Good</button>
       <button onClick={handlerClickNeutral}>Neutral</button>
       <button onClick={handlerClickBad}>Bad</button>
-      <h2>Statistics</h2>
-      <p>
-        <strong>Good: </strong>
-        {good}
-      </p>
-      <p>
-        <strong>Neutral: </strong>
-        {neutral}
-      </p>
-      <p>
-        <strong>Bad: </strong>
-        {bad}
-      </p>
-      <p>
-        <strong>All: </strong>
-        {good+neutral+bad}
-      </p>
-      <p>
-        <strong>Average: </strong>
-        {average} 
-      </p>
-      <p>
-        <strong>Positive: </strong>
-        {(100*good)/(good+neutral+bad)} %
-      </p>
+      <Statistics 
+				good={good} 
+				neutral= {neutral} 
+				bad= {bad} 
+				all= {good+neutral+bad}
+				average= {((good*1)+(neutral*0)+(bad*-1))/(good+neutral+bad)}
+				positive=  {(100*good)/(good+neutral+bad)} 
+			/>
     </div>
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+export default App;

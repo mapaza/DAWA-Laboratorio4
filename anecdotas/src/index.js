@@ -55,7 +55,7 @@ const App = (props) => {
             </span>
         </h2>
         
-        <div class="bg-white mt-5 dark:bg-gray-800 w-full rounded-lg p-4 mb-6 shadow sm:inline-block">
+        <div class="bg-gray-200 mt-5 dark:bg-gray-800 w-full rounded-lg p-4 mb-6 shadow sm:inline-block">
             <div class="flex items-start text-left">
                 <div class="flex-shrink-0">
                     <div class="inline-block relative">
@@ -101,7 +101,7 @@ const App = (props) => {
             </span>
         </h2>
         
-        <div class="bg-white mt-5 dark:bg-gray-800 w-full rounded-lg p-4 mb-6 shadow sm:inline-block">
+        <div class="bg-red-200 mt-5 dark:bg-gray-800 w-full rounded-lg p-4 mb-6 shadow sm:inline-block">
             <div class="flex items-start text-left">
                 <div class="flex-shrink-0">
                     <div class="inline-block relative">

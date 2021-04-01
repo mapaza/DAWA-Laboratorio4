@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import "./styles.css";
+
 import Statistics from "./componentes/statistics.js";
 
 function App() {
